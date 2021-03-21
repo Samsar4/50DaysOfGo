@@ -28,8 +28,22 @@ func main() {
 	n := 10
 	switch {
 	case n%2 == 0:
-		fmt.Println("Even")
+		fmt.Printf("%v is Even\n", n)
 	default:
-		fmt.Println("Odd")
+		fmt.Printf("%v is Odd\n", n)
 	}
+
+	// type swtiches
+	var i interface{} = 3.14
+	switch i.(type) {
+	case int:
+		fmt.Printf("%v is int\n", i)
+	case string:
+		fmt.Printf("%v is string\n", i)
+	case float64:
+		fmt.Printf("%v is float64\n", i)
+	default:
+		fmt.Printf("%v is another value\n", i)
+	}
+
 }
