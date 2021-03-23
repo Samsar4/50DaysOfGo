@@ -8,8 +8,16 @@ import (
 // for is Go’s only looping construct
 
 func main() {
+
 	for a := 0; a < 5; a++ {
 		fmt.Println(a)
+	}
+
+	fmt.Println("--------------------")
+
+	z := 0
+	for ; z < 8; z++ {
+		fmt.Println(z)
 	}
 
 	fmt.Println("--------------------")
@@ -25,8 +33,30 @@ func main() {
 		i = append(i, j)
 	}
 	fmt.Println(i)
-	fmt.Println(i[3])
+	fmt.Println(i[5])
 
 	fmt.Println("--------------------")
+
+	for o := 0; o <= 2; o++ {
+		for p := 0; p <= 2; p++ {
+			fmt.Println(o + p)
+		}
+	}
+
+	fmt.Println("--------------------")
+
+	col := []int{1, 2, 3}
+
+	for k, v := range col {
+		fmt.Println(k, v)
+	}
+
+	fmt.Println("--------------------")
+
+	string1 := "loremp ipsum"
+	for _, v := range string1 {
+		//fmt.Println(k, v)         // unicode value
+		fmt.Println(string(v)) // string value
+	}
 
 }
