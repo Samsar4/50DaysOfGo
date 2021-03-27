@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+// Methods is a special type of function that executes in context of a type
+
 func main() {
 	s := sign{
 		line:  "Welcome",

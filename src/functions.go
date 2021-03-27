@@ -8,7 +8,6 @@ import (
 // * Basic Syntax, * Parameters, * Return values, * Anonymous functions, * Function as types and * Methods
 
 func main() {
-
 	greeting := "Hello Main"
 	sayGreeting(&greeting)
 	fmt.Println(greeting)
@@ -26,15 +25,15 @@ func main() {
 
 	fmt.Println("---------------------")
 
-	// anonymous functions
+	// Anonymous functions
 	func() {
-		fmt.Println("#Anonymous!")
+		fmt.Println("#Anonymous! #1")
 	}()
 
-	f := func() {
+	anon := func() {
 		fmt.Println("#Anonymous! #2")
 	}
-	f()
+	anon()
 
 	var fun func() = func() {
 		fmt.Println("#Anonymous! #3")
@@ -54,6 +53,7 @@ func sayGreeting(greeting *string) {
 	fmt.Println(*greeting)
 }
 
+// Can return addresses of local variables; Automatically promoted from local memory (stack) to shared memory (heap)
 // "..." -> take the last arguments and return into a slice named values
 func sum(values ...int) int {
 	fmt.Println(values)
