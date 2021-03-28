@@ -7,10 +7,10 @@ import (
 	"os"
 )
 
-// init is called before main. 13
+// init is called before main
 func init() {
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: ./curl <url>")
+		fmt.Println("Usage: ./curl https://url.com")
 		os.Exit(-1)
 	}
 }
