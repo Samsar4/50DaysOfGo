@@ -1,4 +1,4 @@
-# 100 days of Go ![100](https://img.shields.io/badge/19-100-101010.svg)
+# 100 days of Go ![100](https://img.shields.io/badge/20-100-101010.svg)
 
 
 ### Rules
