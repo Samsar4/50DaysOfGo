@@ -6,15 +6,18 @@ import (
 	"time"
 )
 
-func main() {
-	// Seed uses the provided seed value to initialize the generator to a deterministic state; unix timestamp (miliseconds) int64
-	// this will provide random output every time is compiled
+func init() {
+	// The default number generator is deterministic, so it’ll produce the same sequence of numbers each time by default. To produce varying sequences, give it a seed that changes.
+	// Note that this is not safe to use for random numbers you intend to be secret, use crypto/rand for those.
 	rand.Seed(time.Now().UnixNano())
+}
+
+func main() {
 	n := 0
 
 	for {
 		n++
-		// rand.Intn -> a non-negative pseudo-random number in [0,n) from the default Source. It panics if n <= 0.
+		// rand.Intn -> a non-negative pseudo-random number in [0,n) from the default Source.
 		i := rand.Intn(100000)
 		fmt.Println(i)
 		// infinite loop until breaks
