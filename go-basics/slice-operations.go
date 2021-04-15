@@ -9,7 +9,7 @@ func main() {
 	// Adding values to the first position on slice
 	slice := []int{0, 1, 3}
 	sliceTwo := []int{4}
-
+	// "..." ellipsis expand slice content
 	slice = append(sliceTwo, slice...)
 	fmt.Println(slice)
 
@@ -26,10 +26,25 @@ func main() {
 	fmt.Println(sl)
 
 	// Removing specific values
-	ss := []int{100, 200, 300, 400, 500}
+	ss := []int{100, 200, 300, 400, 500, 600}
 	index := 2 // 300
-	// appending {100,200} + {400,500}
+	// appending {100,200} + {400,500...}
 	ss = append(ss[:index], ss[index+1:]...)
 	fmt.Println(ss)
+
+	fmt.Println("---------------")
+
+	// Copying slices using copy() func
+	numbers := []int{1, 1, 2, 3, 5, 8}
+	numbersCopied := make([]int, len(numbers))
+
+	copy(numbersCopied, numbers)
+	for i := range numbersCopied {
+		numbersCopied[i] *= 5
+	}
+
+	fmt.Printf("numbers: %v %p \nnumbersCopied: %v %p \n", numbers, numbers, numbersCopied, numbersCopied)
+
+	fmt.Println("---------------")
 
 }
