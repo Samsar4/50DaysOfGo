@@ -38,10 +38,11 @@ func main() {
 	// The map
 	fmt.Println(countryCodes)
 
-	// Deleting some Keys
+	// Deleting key & value by key
 	delete(countryCodes, "Andorra")
+	fmt.Println(countryCodes)
 
-	// Check if the value exists using ('_' anom var)
+	// Check if the value exists using '_' - anom var
 	_, ok := (countryCodes["Afghanistan"])
 	fmt.Printf("The value exist? --> %v \n", ok)
 
