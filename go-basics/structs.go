@@ -58,14 +58,30 @@ func main() {
 
 	fmt.Println("----------------------------")
 
-	// Animal/Cat
+	// Animal and Cat
 	b := Cat{}
-	b.Name = "Baltazar"
+	b.Name = "Balthazar"
 	b.Origin = "Australia"
-	b.Speed = 14
+	b.Speed = 48.5
 	b.EyeColor = "Yellow"
 
-	fmt.Println(b.Origin)
+	fmt.Println(b.Name)
+	fmt.Println(b)
+
+	fmt.Println("----------------------------")
+
+	theAnimal := Animal{Name: "Yomama", Origin: "South Africa"}
+	fmt.Println(theAnimal)
+
+	fmt.Println("----------------------------")
+
+	theCat := Cat{}
+	theCat.Name = "Felix"
+	theCat.Origin = "France"
+	theCat.Speed = 48.5
+	theCat.EyeColor = "Blue"
+	fmt.Println(theCat.Name)
+	fmt.Println(theCat)
 
 	fmt.Println("----------------------------")
 
