@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"regexp"
+	"strings"
 )
 
 // -> Functions in Go:
@@ -40,6 +42,19 @@ func main() {
 	}
 	fun()
 
+	// using regexp, strings pkg and anonymous func to convert strings to uppercase
+	// regex: "\b\w" --> grab the first letter on every string and aditional "\" escapes
+	expr := regexp.MustCompile("\\b\\w")
+	name := "alan mathison turing"
+
+	// passing anonymous func inside the ReplaceAllStringFunc()
+	process := expr.ReplaceAllStringFunc(
+		name,
+		func(s string) string {
+			return strings.ToUpper(s)
+		})
+
+	fmt.Println(process)
 }
 
 func sayMessage(index int, msg string) {
