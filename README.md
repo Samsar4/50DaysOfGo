@@ -1,4 +1,4 @@
-# 100 days of Go ![100](https://img.shields.io/badge/32-100-blue)
+# 100 days of Go ![100](https://img.shields.io/badge/33-100-blue)
 
 
 ### Rules
@@ -6,4 +6,3 @@
 ✅ Commit the progress every day.
 
 Motivation: https://www.100daysofcode.com/
-
