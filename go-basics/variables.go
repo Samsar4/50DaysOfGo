@@ -1,4 +1,4 @@
-// This is my first go program to test basic & abstract concepts 
+// This is my first go program to test basic & abstract concepts
 
 package main
 
@@ -8,7 +8,7 @@ import "fmt"
 var (
 	a string = "Primeira string"
 	b string = "segunda string"
-	c int = 500
+	c int    = 500
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 	fmt.Println("-------------------")
 	var d int = 42
 	x := "Yo"
-	fmt.Println(d,x,a,b,c)
+	fmt.Println(d, x, a, b, c)
 	yo()
 	stringz()
 	constants()
@@ -54,11 +54,11 @@ func constants() {
 	const myConst4 bool = true
 	// enumerate constants:
 	// -> iota keyword representes successive int const (0,1,2...) PER BLOCK
-	// note: the value of iota resets for each block 
+	// note: the value of iota resets for each block
 	// note2: enum expressions -> arithmetic, bitwise operations, bitshifting
 
 	const (
-		bb = iota + 40
+		bb  = iota + 40
 		bb2 = iota
 		bb3 = iota
 	)
