@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	conn, _ := net.Dial("tcp", "10.1.75.200:8081")
+	conn, _ := net.Dial("tcp", "10.10.10.30:8081")
 	for {
 
 		message, _ := bufio.NewReader(conn).ReadString('\n')
