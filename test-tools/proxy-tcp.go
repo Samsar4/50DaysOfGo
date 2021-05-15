@@ -29,7 +29,7 @@ func main() {
 		go func() {
 			conn2, err := net.Dial("tcp", *remoteAddr)
 			if err != nil {
-				log.Println("Error dialing remote addr", err)
+				log.Println("Error connecting to remote address", err)
 				return
 			}
 			go io.Copy(conn2, conn)
