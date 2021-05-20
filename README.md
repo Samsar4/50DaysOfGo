@@ -1,6 +1,6 @@
 # 100 days of Go 
 
-### Progress: ![100](https://img.shields.io/badge/47-100-blue)
+### Progress: ![100](https://img.shields.io/badge/48-100-blue)
 
 ### Rules
 ✅ Code minimum an hour every day for the next 100 days.<br>
