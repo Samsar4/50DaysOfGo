@@ -1,4 +1,4 @@
-# 100 days of Go 
+# 50 days of Go 
 
 ### Progress: ![100](https://img.shields.io/badge/53-100-blue)
 
